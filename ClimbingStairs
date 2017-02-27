@@ -1,0 +1,22 @@
+// LC_ClimbStair.cpp : 定义控制台应用程序的入口点。
+//
+#include "stdafx.h"
+
+int ClimbStairs(int nNum)
+{
+	if (nNum <= 2 && 0 <= nNum)
+	{
+		return nNum;
+	}
+	else if (nNum > 2)
+	{
+		return ClimbStairs(nNum - 1) + ClimbStairs(nNum - 2);
+	}
+}
+
+int main()
+{
+	printf("%d", ClimbStairs(3));
+	getchar();
+    return 0;
+}
