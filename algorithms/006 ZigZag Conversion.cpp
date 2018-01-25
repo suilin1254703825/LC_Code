@@ -155,7 +155,6 @@ string convertEx(string s, int numRows) {
     }
     return strRes;
 }
-```
 
 string convertEx2(string s, int numRows) {
     int nLen = s.size();
@@ -191,7 +190,6 @@ string convertEx2(string s, int numRows) {
 
 int main()
 {
-
     cout << convert("PAYPALISHIRING", 3) << endl; // PAHNAPLSIIGYIR
     cout << convertEx("PAYPALISHIRING", 3) << endl; // PAHNAPLSIIGYIR
     cout << convertEx2("PAYPALISHIRING", 3) << endl; // PAHNAPLSIIGYIR
