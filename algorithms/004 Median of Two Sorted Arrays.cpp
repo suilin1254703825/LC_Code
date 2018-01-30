@@ -29,7 +29,7 @@ double findMedianSortedArrays(vector<int>& vecArrayA, vector<int>& vecArrayB) {
     }
     else
     {
-    return (findKth(vecArrayA.begin(), m, vecArrayB.begin(), n, nSize / 2)
+        return (findKth(vecArrayA.begin(), m, vecArrayB.begin(), n, nSize / 2)
             + findKth(vecArrayA.begin(), m, vecArrayB.begin(), n, nSize / 2 + 1)) / 2.0;
     }
 }
