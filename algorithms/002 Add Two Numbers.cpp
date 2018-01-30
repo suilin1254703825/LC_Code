@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include <vector>
-#include <hash_map>
 using namespace std;
 
 /*
@@ -44,7 +43,6 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         }
     }
 
-    //特殊情况，比如9 + 9 = 18，最后的 1
     if (count > 0) {
         ListNode *tmp = new ListNode(count);
         if (!res) {
