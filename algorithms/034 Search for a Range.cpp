@@ -87,7 +87,6 @@ vector<int> searchRange(vector<int>& nums, int target) {
     return vecTmp;
 }
 
-
 int main()
 {
 
@@ -98,4 +97,3 @@ int main()
     getchar();
     return 0;
 }
-

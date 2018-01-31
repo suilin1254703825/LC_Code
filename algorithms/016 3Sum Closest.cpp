@@ -63,6 +63,7 @@ int threeSumClosest(vector<int>& vecNum, int nTarget) {
     return nTarget - nDiff;
 
 }
+
 int main()
 {
 
@@ -73,4 +74,3 @@ int main()
     getchar();
     return 0;
 }
-

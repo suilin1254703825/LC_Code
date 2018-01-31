@@ -17,10 +17,10 @@ struct ListNode {
 Given linked list: 1->2->3->4->5, and n = 2.
 After removing the second node from the end, the linked list becomes 1->2->3->5.
 Solution:
-±éÀúÒ»±éÁ´±í»ñÈ¡³¤¶È£¬Í¨¹ý³¤¶ÈµÄË÷ÒýÀ´É¾³ýÄ³Ò»¸ö½Úµã¡£
-note£º
-1¡¢É¾³ý½Úµã·½Ê½Îª£º¶¨Î»µ½ÒªÉ¾³ýµÄÉÏÒ»½Úµã´¦£¬nodeTmp->next = nodeTmp->next->next;
-2¡¢Èç¹ûÉ¾³ýµÄÊÇÍ·½Úµã£¬Ôòhead = head->next;
+ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½È£ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½Ä³Ò»ï¿½ï¿½ï¿½Úµã¡£
+noteï¿½ï¿½
+1ï¿½ï¿½É¾ï¿½ï¿½ï¿½Úµã·½Ê½Îªï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ÒªÉ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Úµã´¦ï¿½ï¿½nodeTmp->next = nodeTmp->next->next;
+2ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½Úµã£¬ï¿½ï¿½head = head->next;
 */
 ListNode* removeNthFromEnd(ListNode* head, int n) {
     ListNode* nodeTmp = head;
@@ -89,4 +89,3 @@ int main()
     getchar();
     return 0;
 }
-

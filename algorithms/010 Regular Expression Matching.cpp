@@ -83,8 +83,6 @@ bool isMatch(string s, string p)
     return match(s, p, 0, 0); s
 }
 
-
-
 // 动态规划来解决问题
 bool isMatch1(string s, string p) {
     int slen = s.size();
@@ -113,4 +111,3 @@ int main()
     getchar();
     return 0;
 }
-
