@@ -70,7 +70,6 @@ int reverse(int x) {
 }
 int main()
 {
-
     cout << reverse(-123) << endl; // 321
 
     getchar();
