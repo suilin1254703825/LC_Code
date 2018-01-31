@@ -31,7 +31,6 @@ int maxArea(vector<int>& height) {
     return nMax;
 }
 
-
 int main()
 {
     vector<int> vecHgt = { 3,4,6,3,5,7,8 };

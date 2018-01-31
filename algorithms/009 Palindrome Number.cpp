@@ -1,7 +1,5 @@
 #include "stdafx.h"
-#include <vector>
 using namespace std;
-
 /*
 Determine whether an integer is a palindrome. Do this without extra space.
 click to show spoilers.
