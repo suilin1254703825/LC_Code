@@ -55,3 +55,49 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
     }
     return res;
 }
+
+ListNode* addTwoNumbers1(ListNode* l1, ListNode* l2) {
+    ListNode* p = l1;
+    ListNode* q = l2;
+    ListNode* s = new ListNode(0);
+    ListNode* head = s;
+    int carry = 0;
+
+    while (p != NULL || q != NULL)
+    {
+        int a = p ? p->val : 0;
+        int b = q ? q->val : 0;
+        int sum = a + b + carry;
+
+        s->next = new ListNode(sum % 10);
+        s = s->next;
+
+        carry = sum / 10;
+
+        if (p != NULL) p = p->next;
+        if (q != NULL) q = q->next;
+    }
+
+    if (carry != 0)
+    {
+        s->next = new ListNode(1);
+        s = s->next;
+    }
+
+    return head->next;
+}
+
+int main(int argc, char const *argv[])
+{
+    // NO. 002
+    {
+        vector<int> vecInit1 = { 2, 4, 5 };
+        ListNode* l1 = vec2ListNode(vecInit1);
+        vector<int> vecInit2 = { 3, 6, 1 };
+        ListNode* l2 = vec2ListNode(vecInit2);
+
+        ListNode* ret = addTwoNumbers(l1, l2);
+    }
+    
+    return 0;
+}
