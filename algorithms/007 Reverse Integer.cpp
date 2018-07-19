@@ -68,6 +68,36 @@ int reverse(int x) {
     }
     return (int)answer;
 }
+
+
+
+/*
+7. Reverse Integer  反转整数
+    给定一个 32 位有符号整数，将整数中的数字进行反转。
+
+示例 1:
+输入: 123
+输出: 321
+    假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−2 31,  2 31 − 1]。根据这个假设，如果反转后的整数溢出，则返回 0
+*/
+int reverseEx3(int x) {
+    long long l_value = 0;
+    int a = x;
+
+    while (a)
+    {
+        l_value = l_value * 10 + a % 10;
+        a = a / 10;
+    }
+
+    if (l_value > INT_MAX || l_value < INT_MIN)
+    {
+        l_value = 0;
+    }
+
+    return l_value;
+}
+
 int main()
 {
     cout << reverse(-123) << endl; // 321
