@@ -5,6 +5,7 @@
 #include <iostream>
 #include <stack>
 #include <vector>
+#include "data_struct.h"
 using namespace std;
 
 struct TreeNode {

@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "stack": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "iostream": "cpp",
+        "ios": "cpp"
     }
 }

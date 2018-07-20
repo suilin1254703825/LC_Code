@@ -5,14 +5,9 @@
 #include <iostream>
 #include <stack>
 #include <vector>
-using namespace std;
+#include "data_struct.h"
 
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
+using namespace std;
 
 /*
 1. 迭代方式，二叉树后序遍历
