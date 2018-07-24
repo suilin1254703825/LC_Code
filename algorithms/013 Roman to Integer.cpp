@@ -74,6 +74,36 @@ int romanToInt(string s) {
     return nRes;
 }
 
+int romanToInt1(string s) {
+    map <char, int> mapRoman2int = {
+        {'I', 1},
+        {'V', 5},
+        {'X', 10},
+        {'L', 50},
+        {'C', 100},
+        {'D', 500},
+        {'M', 1000},
+    };
+   
+    int prevalue = mapRoman2int[s[0]];
+    int cur = prevalue;
+    int i = 1;
+    int ret = cur;
+
+    while ('\0' != s[i])
+    {
+        cur = mapRoman2int[s[i++]];
+        ret += cur;
+        if (cur > prevalue)
+        {
+            ret = ret - (prevalue << 1);
+        }
+        prevalue = cur;
+    }
+
+    return ret;
+}
+
 int main()
 {
     // romanToInt
