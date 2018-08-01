@@ -32,24 +32,30 @@ int removeDuplicates(vector<int>& nums) {
     return nums.size();
 }
 
+int removeDuplicates1(vector<int>& nums) {
+	int i = 0, j = 0;
+	while (i < nums.size())
+	{
+		while (i < nums.size() && j > 0 && nums[i] == nums[j - 1])
+		{
+			i++;
+		}
 
-int removeDuplicates(vector<int>& nums) {
-    int i = 0, j = 1;
-    for (; i < nums.size(); ++i)
-    {
-        if (nums[j] != nums[i])
-        {
-            nums[j] = nums[i];
-            j++;
-        }
-    }
-    return j;
-
+		if (i < nums.size())
+		{
+			nums[j++] = nums[i++];
+		}
+	}
+	return j;
 }
 
 int main(int argc, char const *argv[])
 {
     /* code */
-    
+
+	vector<int> nums = { 2, 2,4,7, 7, 11, 15 };
+	vector<int> num = { 2, 2,4 };
+	//cout << removeDuplicates1(num) << endl;
+	cout << removeDuplicates1(nums) << endl;
     return 0;
 }
