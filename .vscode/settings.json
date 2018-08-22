@@ -3,6 +3,12 @@
         "stack": "cpp",
         "xiosbase": "cpp",
         "iostream": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "vector": "cpp",
+        "system_error": "cpp",
+        "initializer_list": "cpp",
+        "type_traits": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp"
     }
 }
