@@ -23,9 +23,7 @@ void rotate(vector<int>& nums, int k) {
     
 }
 
-int main(int argc, char const *argv[])
-{
-    /* code */
+int main(int argc, char const *argv[]) {
 
     vector<int> nums = {7,1,5,3,6,4};
     int ret = maxProfit(nums);
